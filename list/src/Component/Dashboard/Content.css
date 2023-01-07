@@ -1,0 +1,80 @@
+.container-2{
+    width: 100%;
+    height: 100vw;
+}
+
+.box-11{
+    width: 100%;
+    min-height: 80px;
+    border:2px solid darkgreen;
+}
+
+.box-22{
+    width: 100%;
+    min-height: 420px;
+    max-height: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    float: left;
+    background-color: rgb(20, 236, 20) ;
+    width: 140px;
+    min-height: 140px;
+   max-height: 100%;
+}
+.sidebar h1{
+color:lightseagreen
+}
+.sidebar p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.btn{
+    position:absolute;
+    margin-top: 280px;
+    margin-left: -30px;
+    border: none;
+    background-color:rgb(20, 236, 20) ; 
+    font-size: larger;
+}
+
+.box-11 h2{
+    float: right;
+    font-size: larger;
+    margin-right: 20px;
+    color: black;
+}
+
+.btn-2{
+    width: 180px;
+    height: 40px;
+    font-size: large;
+    position: absolute;
+    margin-top: 30px;
+   margin-left: 820px;
+   color: purple;
+    background-color: aliceblue;
+    border-color: purple;
+}
+
+
+
+.table{
+    width: 600px;
+    height: 100%;
+    position: absolute;
+    margin-top: 10% ;
+    margin-left: 20%;
+}
+
+table{
+    border: 2px solid;
+    width: 100%;
+    height: 80px;
+    background-color: palevioletred;
+}
+th{
+    border-top: 2px  solid black;
+    border-right: 2px  solid black;
+}
