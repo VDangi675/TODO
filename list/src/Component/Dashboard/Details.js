@@ -11,7 +11,7 @@ export default function Details({ data, setData }) {
 
 
     useEffect(() => {
-        if(!data.email) return 
+
         fetch("/list", {
             method: "POST",
             Headers: {
@@ -20,8 +20,8 @@ export default function Details({ data, setData }) {
                 data
             })
         }).then(res => res.json()).then(data => {
-            if (data.e) {
-                alert(data.e)
+            if (data.error) {
+                alert(data.error)
             } else {
                 alert(data.message)
                 navigate("/Dashboard")

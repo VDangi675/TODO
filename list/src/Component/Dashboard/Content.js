@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useNavigate, useSearchParams } from "react-router-dom"
 import "../Dashboard/Content.css"
+import Data from "./Data"
 
 
 export default function Content(){
@@ -13,7 +14,8 @@ export default function Content(){
                 "authorization":"Bearer" + localStorage.getItem("jwt")
             }
         }).then(res=>res.json()).then(data=>{
-            setDetails(data)
+            setDetails(data.data)
+            console.log(data)
         })
     },[details])
 
@@ -63,6 +65,20 @@ const Logout=(e)=>{
             <th>
                Action
             </th>
+        </tr>
+
+        <tr>
+            <td>
+        
+            {details.map((list,i)=>{
+                return (
+                    <>
+                    <Data key={i} list={list}/>
+                    </>
+                )
+            })}
+    
+    </td>
         </tr>
     </table>
 </div>
